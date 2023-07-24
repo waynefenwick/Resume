@@ -4,219 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Resume</title>
-    <style>
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 13px;
-            background-color: rgb(207, 208, 228);
-        }
-
-        /* Main container */
-        .resume-container {
-            width: 8.5in;
-            height: 13in;
-            margin: 20px auto;
-            border: 1px solid #000;
-            padding: 40px; /* Add padding around the edge */
-            display: flex;
-            justify-content: space-between; /* Space out the columns */
-            align-items: flex-start; /* Align items to the top */
-            background-color: rgb(255, 255, 255);
-            line-height: 1.5;
-        }
-
-        /* Left column */
-        .left-column {
-            width: 66.66%;
-            margin-right: 20px; /* Add margin between the columns */
-        }
-
-        /* Right column */
-        .right-column {
-            width: 33.33%;
-             border-left: 1px solid #5f5f5f;
-             padding: 10px;
-        }
-
-        /* Styling for name, contact, and links */
-        .name {
-            font-size: 36px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .contact {
-            font-size: 14px;
-        }
-
-        .link {
-            font-size: 14px;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Styling for address and email */
-        .address {
-            font-size: 14px;
-        }
-
-        .email {
-            font-size: 14px;
-        }
-
-        /* Styling for skillset */
-        .skillset {
-            font-size: 13px;
-            text-align: center;
-        }
-
-        .skillset-heading {
-            font-weight: bold;
-          font-size: 14px;
-
-        }
-
-.skills {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 5px 0;
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-}
-
-.skill {
-    display: inline;
-    margin-right: 10px;
-    padding-right: 10px; /* Add right padding to create space for the vertical line */
-    border-right: 1px solid #000; /* Add vertical line */
-}
-
-/* Remove the right border from the last skill to avoid an extra vertical line */
-.skill:last-child {
-    border-right: none;
-}
-
-        /* Styling for education and experience */
-        .education-experience {
-            margin-top: 20px;
-        }
-
-        .experience-item {
-            margin-bottom: 10px;
-        }
-
-        .experience-item strong {
-            display: block;
-        }
-
-        .experience-link {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Styling for achievements, furthering education, completed education, and languages */
-        .achievements,
-        .furthering-education,
-        .completed-education,
-        .languages {
-            margin-top: 20px;
-        }
-
-        .education-item {
-            margin-bottom: 10px;
-        }
-
-        .education-heading {
-            font-weight: bold;
-        }
-
-        .language-list {
-            list-style-type: disc;
-            margin-left: 20px;
-            padding: 0;
-        }
-
-        .language {
-            margin-bottom: 5px;
-        }
-
-        /* Styling for bullet points */
-        .bullet-points {
-            list-style-type: disc;
-            margin-left: 20px;
-            padding: 0;
-        }
-
-        .bullet-point {
-            margin-bottom: 5px;
-        }
-
-        /* Styling for all links */
-a {
-    color: #007BFF; /* Set the default color for all links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Add transition for smooth color change on hover */
-}
-
-/* Change color on hover */
-a:hover {
-    color: #FF8800; /* Set the color for links on hover */
-}
-
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="resume-container">
-          <!-- Left column -->
-          <div class="left-column">
-               <div class="name">WAYNE FENWICK</div>
-               <br>
+        <!-- Left column -->
+        <div class="left-column">
+            <div class="name">WAYNE FENWICK</div>
+            <br>
 
-               <!-- Skillset -->
-               <div class="skillset">
-                    <div class="skillset-heading">SKILLSET</div>
+            <!-- Skillset -->
+            <div class="skillset">
+                <div class="skillset-heading">SKILLSET</div>
                     <ul class="skills">
-                         <li class="skill">CSS</li>
-                         <li class="skill">HTML</li>
-                         <li class="skill">Data Analysis</li>
-                         <li class="skill">Project Management</li>
-                         <li class="skill">JavaScript</li>
+                        <li class="skill">CSS</li>
+                        <li class="skill">HTML</li>
+                        <li class="skill">Data Analysis</li>
+                        <li class="skill">Project Management</li>
+                        <li class="skill">JavaScript</li>
                     </ul>
-               </div>
-                    <div>________________________________________________________________</div>
-               <br>
-               <br>
+            </div>
+            <div>________________________________________________________________</div>
+            <br>
+            <br>
 
+            <!-- Education -->
+            <div class="education-experience">
+                <strong>UNIVERSITY OF TEXAS, AUSTIN</strong>
+                Coding Bootcamp – March 2023 - Current
+                <ul class="bullet-points">
+                    <li>
+                        <strong>Completed numerous Challenges including:</strong>
+                        <ul class="experience-link">
+                            <li><a href="https://waynefenwick.github.io/Password-Generator/">Password Generator</a></li>
+                            <li><a href="https://stark-waters-94993-a4d78ae90400.herokuapp.com/">Tech Blog</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Completed two Team Projects:</strong>
+                        <ul class="experience-link">
+                            <li><a href="https://fersill53.github.io/movie-reviews-and-gifs/">Movie Reviews</a></li>
+                            <li><a href="https://fathomless-stream-98788-44df48fe7ade.herokuapp.com/">BookShare</a></li>
+                        </ul>
+                    </li>
+                    <div>My strengths are primarily on front-end designing with HTML and CSS.
+                        Have experienced training in JavaScript, MySQL, NoSQL, ORM, Node.js and Express Handlebars.</div>
+                </ul>
+            </div>
+            <br>
 
-
-<!-- University of Texas, Austin Coding Bootcamp -->
-<div class="education-experience">
-    <strong>UNIVERSITY OF TEXAS, AUSTIN</strong>
-    Coding Bootcamp – March 2023 - Current
-    <ul class="bullet-points">
-        <li>
-            <strong>Completed numerous Challenges including:</strong>
-            <ul class="experience-link">
-                <li><a href="https://waynefenwick.github.io/Password-Generator/">Password Generator</a></li>
-                <li><a href="https://stark-waters-94993-a4d78ae90400.herokuapp.com/">Tech Blog</a></li>
-            </ul>
-        </li>
-        <li>
-            <strong>Completed two Team Projects:</strong>
-            <ul class="experience-link">
-                <li><a href="https://fersill53.github.io/movie-reviews-and-gifs/">Movie Reviews</a></li>
-                <li><a href="https://fathomless-stream-98788-44df48fe7ade.herokuapp.com/">BookShare</a></li>
-            </ul>
-          </li>
-          <div>My strengths are primarily on front-end designing with HTML and CSS.
-            Have experienced training in JavaScript, MySQL, NoSQL, ORM, Node.js and Express Handlebars.</div>
-    </ul>
-</div>
-    <br>
-
-
-
-            <!-- Professional Experience -->
             <div class="education-experience">
                 <strong>PROFESSIONAL EXPERIENCE</strong>
                 <div class="experience-item">
@@ -262,66 +99,64 @@ a:hover {
         </div>
 
         <!-- Right column -->
-          <div class="right-column">
-               <div class="address">Conroe TX, USA</div>
-               <div class="contact"><b>832-606-3480</b></div>
-               <div class="link"><a href="https://www.linkedin.com/in/wayne-fenwick-904449b3/">LinkedIn</a></div>
-               <div class="link"><a href="https://github.com/waynefenwick">GitHub</a></div>
-               <div class="email"><a href="mailto:waynefenwick@gmail.com">waynefenwick@gmail.com</a></div>
-               <br>
-               <br>
-               <br>
+        <div class="right-column">
+            <div class="address">Conroe TX, USA</div>
+            <div class="contact"><b>832-606-3480</b></div>
+            <div class="link"><a href="https://www.linkedin.com/in/wayne-fenwick-904449b3/">LinkedIn</a></div>
+            <div class="link"><a href="https://github.com/waynefenwick">GitHub</a></div>
+            <div class="email"><a href="mailto:waynefenwick@gmail.com">waynefenwick@gmail.com</a></div>
+            <br>
+            <br>
+            <br>
 
-
-<!-- Achievements -->
-          <div class="achievements">
-               <div class="experience-item">
+            <!-- Achievements -->
+            <div class="achievements">
+                <div class="experience-item">
                     <strong>ACHIEVEMENTS</strong>
                     <ul class="bullet-points">
-                         <li>"Service Above Self" - High School</li>
-                         <li>Magna Cum Laude - Graduation</li>
-                         <li>Level 7 - Project Management</li>
+                        <li>"Service Above Self" - High School</li>
+                        <li>Magna Cum Laude - Graduation</li>
+                        <li>Level 7 - Project Management</li>
                     </ul>
-               </div>
-          </div>
-          <br>
+                </div>
+            </div>
+            <br>
 
-<!-- Furthering Education -->
-          <div class="furthering-education">
-               <div class="education-item">
+            <!-- Furthering Education -->
+            <div class="furthering-education">
+                <div class="education-item">
                     <strong>FURTHERING EDUCATION</strong>
                     <ul class="bullet-points">
-                         <li>Diploma in Full-Stack coding</li>
+                        <li>Diploma in Full-Stack coding</li>
                     </ul>
-               </div>
-          </div>
-          <br>
+                </div>
+            </div>
+            <br>
 
-
-<!-- Completed Education -->
-          <div class="completed-education">
-               <div class="education-item">
+            <!-- Completed Education -->
+            <div class="completed-education">
+                <div class="education-item">
                     <strong>COMPLETED EDUCATION</strong>
                     <ul class="bullet-points">
-                         <li>MA in Counseling</li>
-                         <li>BA in Communications</li>
-                         <li>AA in Liberal Arts</li>
+                        <li>MA in Counseling</li>
+                        <li>BA in Communications</li>
+                        <li>AA in Liberal Arts</li>
                     </ul>
-               </div>
-          </div>
-          <br>
+                </div>
+            </div>
+            <br>
 
-<!-- Languages -->
-          <div class="languages">
-               <div class="education-item">
+            <!-- Languages -->
+            <div class="languages">
+                <div class="education-item">
                     <strong>LANGUAGES</strong>
                     <ul class="bullet-points">
-                         <li>English</li>
-                         <li>German</li>
+                        <li>English</li>
+                        <li>German</li>
                     </ul>
-               </div>
-          </div>
-     </div>
-</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
